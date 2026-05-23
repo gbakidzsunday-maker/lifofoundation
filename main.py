@@ -730,12 +730,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "https://lifora-foundation.vercel.app",
+        "https://liforacanada.com",
+        "https://www.liforacanada.com",
     ],
-    allow_origin_regex=(
-        r"https://.*\.vercel\.app"
-    ),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

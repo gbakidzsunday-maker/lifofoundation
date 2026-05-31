@@ -779,6 +779,10 @@ async def exchange_rates():
         rates=EXCHANGE_RATES
     )
 
+@app.options("/api/donate")
+async def donate_options():
+    return Response(status_code=200)
+
 
 @app.post(
     "/api/donate",
